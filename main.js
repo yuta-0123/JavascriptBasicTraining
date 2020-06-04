@@ -2,10 +2,8 @@
 // logic: 面積を計算する
 // return: 面積
 
-function getArea(base,height) {
-  let base = 10;
-  let height = 5;
-  var triangle=1/2*height*base;
+let= getArea=(base,height)=> {
+  let triangle=1/2*height*base;
   return triangle
 }
 
@@ -16,9 +14,18 @@ function getArea(base,height) {
 // I => month
 // O => season
 
-function getSeason(month){
-  if(month<3){
+let getSeason=(month)=>{
+  if(month<=3){
     return "春"
+  }
+  else if(month<=6){
+    return "夏"
+  }
+  else if(month<=9){
+    return "秋"
+  }
+  else if (month<=12){
+    return "冬"
   }
 }
 
@@ -26,7 +33,7 @@ function getSeason(month){
 // I => 曜日
 // O => 数値
 
-function convertDayToNum(day){
+let convertDayToNum=(day)=>{
   switch(day){
     case "月曜日":
       return 1
@@ -43,7 +50,7 @@ function convertDayToNum(day){
 // I => 数字
 // O => 階乗
 
-function calcFactorial(num){
+let calcFactorial=(num)=>{
   let answer = 1
   for(i=1; i<=num; i++){
     answer=answer*i;
